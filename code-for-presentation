@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <logo>
+    <logo id="logo">
       <a href="#bar">
         <div class="logo">
           <center>
@@ -162,13 +162,19 @@
         </figure>
       </center>
     </article>
+
+    <div class="menu">
+      <a href="#logo"><img src="https://drive.google.com/uc?export=view&id=16--GlYCgKLMMMmhakMmeTafsiIL9JZ30"
+          alt="to menu" height="50" title="back to menu" /></a>
+    </div>
+
   </main>
 
   <footer id="more">
     <a href="https://www.instagram.com/js__0512/" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/profile.php?id=100005282222471" target="_blank">Facebook</a>
     <a href="mailto:b313110063@tmu.edu.tw" target="_blank">Email</a>
-    <a href="tel:0902256889">Tel</a>
+    <a href="tel:+0902256889">Tel</a>
     <a href="https://welcome.astrobin.com/" target="_blank">More</a>
   </footer>
 
@@ -226,10 +232,19 @@ article {
     background-color: rgb(38, 42, 54);
 }
 
+/* menu bottom*/
+.menu {
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    opacity: 0.8;
+}
+
 /* logo */
 .logo {
-    position: fixed;
+    position: sticky;
     top: 0px;
+    left: 0px;
     z-index: 10;
     width: 100%;
     background-color: rgb(38, 42, 54);
@@ -255,9 +270,8 @@ article {
 
 .bar {
     border: 1px solid rgb(38, 42, 54);
-    padding: 130px 0px 5px;
+    padding: 5px 0px;
     text-align: center;
-
 }
 
 /* footer */
